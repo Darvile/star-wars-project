@@ -1,0 +1,28 @@
+// Transform to rem
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+// Metric system
+@function metrics($size: null) {
+  $space: 8;
+
+  @if ($size == 'extraSmall') {
+    $space: $space;
+  } @else if ($size == 'small') {
+    $space: $space * 2;
+  } @else if ($size == 'medium') {
+    $space: $space * 3;
+  } @else if ($size == 'mediumLarge') {
+    $space: $space * 4;
+  } @else if ($size == 'large') {
+    $space: $space * 5;
+  } @else if ($size == 'extraLarge') {
+    $space: $space * 6;
+  } @else if ($size == 'supreme') {
+    $space: $space * 15;
+  }
+
+  @return rem-calc($space);
+}
