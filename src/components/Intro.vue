@@ -27,6 +27,8 @@
     .intro {
         display: flex;
         justify-content: center;
+        margin-bottom: metrics('supreme');
+
         &_content {
             max-width: 80%;
         }

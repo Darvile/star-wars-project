@@ -88,6 +88,7 @@
         --greyLight: #919191;
         --headerHeight: 7vh;
         --appFontSm: 20px;
+        --appFont: 'Roboto', sans-serif;
     }
 
     html {
@@ -97,7 +98,7 @@
     body {
         background-color: var(--appBlack);
         margin: 0;
-        font-family: 'Lato';
+        font-family: var(--appFont);
         font-weight: 400;
     }
 
